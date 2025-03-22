@@ -196,7 +196,7 @@ public class Board {
                 moves.add(swapArray(push(square, 1, -1))); // right capture
             }
         } else if (piece.sameType(knight) && turn == piece.getColor()) {
-            for (int i = 0; i < 8; i++) {
+            for (int i = 1; i < 8; i++) {
                 int xOffset = knightMovesX[i];
                 int yOffset = knightMovesY[i];
                 if (checkSquare(push(square, xOffset, yOffset))) {
